@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		435FBAE81E6FFDC000111D78 /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 435FBAE71E6FFDC000111D78 /* libMobileGestalt.tbd */; };
+		435FBAEA1E6FFDD000111D78 /* libMobileGestaltExtensions.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 435FBAE91E6FFDD000111D78 /* libMobileGestaltExtensions.tbd */; };
+		43A139F41E6FE75F002EBD24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A139F31E6FE75F002EBD24 /* UIKit.framework */; };
+		43A139F81E6FE79A002EBD24 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A139F71E6FE79A002EBD24 /* QuartzCore.framework */; };
+		43A13A011E6FED1B002EBD24 /* AppSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A13A001E6FED1B002EBD24 /* AppSupport.framework */; };
+		43A13A071E6FF6DA002EBD24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A13A061E6FF6DA002EBD24 /* CoreGraphics.framework */; };
+		43B3022C1E6E976F00EB1A4D /* ALApplicationList.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43B3022B1E6E976F00EB1A4D /* ALApplicationList.mm */; };
+		43B312A81E6E982A00EB1A4D /* SpringBoard.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B312A71E6E982A00EB1A4D /* SpringBoard.h */; };
+		43B312AD1E6E983200EB1A4D /* ALApplicationTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B312AA1E6E983200EB1A4D /* ALApplicationTableDataSource.m */; };
+		43B312AE1E6E983200EB1A4D /* ALValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B312AB1E6E983200EB1A4D /* ALValueCell.m */; };
+		43B312B01E6E983800EB1A4D /* ALApplicationList-private.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B312AF1E6E983800EB1A4D /* ALApplicationList-private.h */; };
+		43B312CC1E6E98F700EB1A4D /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B312CB1E6E98F700EB1A4D /* CydiaSubstrate.framework */; };
+		43EC24C21E71344300026007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B302201E6E976F00EB1A4D /* Foundation.framework */; };
+		43EC24C31E71344300026007 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A139F31E6FE75F002EBD24 /* UIKit.framework */; };
+		43EC24C41E71344300026007 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A139F11E6FE6D8002EBD24 /* Preferences.framework */; };
+		43EC24E41E71349500026007 /* ALApplicationPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC24E31E71349500026007 /* ALApplicationPreferenceViewController.m */; };
+		43EC24E51E7134A200026007 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A13A061E6FF6DA002EBD24 /* CoreGraphics.framework */; };
+		43EC24E61E7136D500026007 /* libapplist2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B3021D1E6E976F00EB1A4D /* libapplist2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		435FBAE71E6FFDC000111D78 /* libMobileGestalt.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libMobileGestalt.tbd; path = usr/lib/libMobileGestalt.tbd; sourceTree = SDKROOT; };
+		435FBAE91E6FFDD000111D78 /* libMobileGestaltExtensions.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libMobileGestaltExtensions.tbd; path = usr/lib/libMobileGestaltExtensions.tbd; sourceTree = SDKROOT; };
+		43A139F11E6FE6D8002EBD24 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = System/Library/PrivateFrameworks/Preferences.framework; sourceTree = SDKROOT; };
+		43A139F31E6FE75F002EBD24 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43A139F71E6FE79A002EBD24 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43A139FE1E6FEADD002EBD24 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		43A13A001E6FED1B002EBD24 /* AppSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppSupport.framework; path = System/Library/PrivateFrameworks/AppSupport.framework; sourceTree = SDKROOT; };
+		43A13A061E6FF6DA002EBD24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43B3021D1E6E976F00EB1A4D /* libapplist2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libapplist2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B302201E6E976F00EB1A4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43B302261E6E976F00EB1A4D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		43B302281E6E976F00EB1A4D /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		43B302291E6E976F00EB1A4D /* AppList2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppList2-Prefix.pch"; sourceTree = "<group>"; };
+		43B3022B1E6E976F00EB1A4D /* ALApplicationList.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ALApplicationList.mm; sourceTree = "<group>"; };
+		43B302301E6E976F00EB1A4D /* AppList2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AppList2.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/AppList2.plist; sourceTree = "<group>"; };
+		43B302361E6E979700EB1A4D /* ALApplicationList.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ALApplicationList.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		43B3128D1E6E980C00EB1A4D /* ALApplicationList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALApplicationList.h; sourceTree = "<group>"; };
+		43B3128E1E6E980C00EB1A4D /* ALApplicationTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALApplicationTableDataSource.h; sourceTree = "<group>"; };
+		43B3128F1E6E980C00EB1A4D /* ALValueCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALValueCell.h; sourceTree = "<group>"; };
+		43B312901E6E980C00EB1A4D /* AppList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppList.h; sourceTree = "<group>"; };
+		43B312A71E6E982A00EB1A4D /* SpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoard.h; sourceTree = "<group>"; };
+		43B312AA1E6E983200EB1A4D /* ALApplicationTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALApplicationTableDataSource.m; sourceTree = "<group>"; };
+		43B312AB1E6E983200EB1A4D /* ALValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALValueCell.m; sourceTree = "<group>"; };
+		43B312AF1E6E983800EB1A4D /* ALApplicationList-private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALApplicationList-private.h"; sourceTree = "<group>"; };
+		43B312CB1E6E98F700EB1A4D /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CydiaSubstrate.framework; sourceTree = "<group>"; };
+		43EC24C11E71344300026007 /* AppList2.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppList2.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EC24CB1E71344300026007 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		43EC24CC1E71344300026007 /* AppList2Bundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppList2Bundle-Info.plist"; sourceTree = "<group>"; };
+		43EC24DF1E71344300026007 /* AppList2Bundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppList2Bundle-Prefix.pch"; sourceTree = "<group>"; };
+		43EC24E31E71349500026007 /* ALApplicationPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALApplicationPreferenceViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B302191E6E976F00EB1A4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435FBAEA1E6FFDD000111D78 /* libMobileGestaltExtensions.tbd in Frameworks */,
+				435FBAE81E6FFDC000111D78 /* libMobileGestalt.tbd in Frameworks */,
+				43A13A071E6FF6DA002EBD24 /* CoreGraphics.framework in Frameworks */,
+				43A13A011E6FED1B002EBD24 /* AppSupport.framework in Frameworks */,
+				43A139F81E6FE79A002EBD24 /* QuartzCore.framework in Frameworks */,
+				43A139F41E6FE75F002EBD24 /* UIKit.framework in Frameworks */,
+				43B312CC1E6E98F700EB1A4D /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43EC24BD1E71344300026007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EC24E61E7136D500026007 /* libapplist2.dylib in Frameworks */,
+				43EC24E51E7134A200026007 /* CoreGraphics.framework in Frameworks */,
+				43EC24C21E71344300026007 /* Foundation.framework in Frameworks */,
+				43EC24C41E71344300026007 /* Preferences.framework in Frameworks */,
+				43EC24C31E71344300026007 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4377C6591E7255B30004754F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				4377C65B1E7255C50004754F /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		4377C65B1E7255C50004754F /* System */ = {
+			isa = PBXGroup;
+			children = (
+				4377C65D1E7255EB0004754F /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		4377C65D1E7255EB0004754F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4377C65E1E7255FC0004754F /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		4377C65E1E7255FC0004754F /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		43B302121E6E976F00EB1A4D = {
+			isa = PBXGroup;
+			children = (
+				43B302221E6E976F00EB1A4D /* AppList2 */,
+				43EC24C51E71344300026007 /* AppList2Bundle */,
+				43B3021F1E6E976F00EB1A4D /* Frameworks */,
+				43B3021E1E6E976F00EB1A4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B3021E1E6E976F00EB1A4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43B3021D1E6E976F00EB1A4D /* libapplist2.dylib */,
+				43EC24C11E71344300026007 /* AppList2.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43B3021F1E6E976F00EB1A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435FBAE91E6FFDD000111D78 /* libMobileGestaltExtensions.tbd */,
+				435FBAE71E6FFDC000111D78 /* libMobileGestalt.tbd */,
+				43A13A061E6FF6DA002EBD24 /* CoreGraphics.framework */,
+				43A13A001E6FED1B002EBD24 /* AppSupport.framework */,
+				43A139FE1E6FEADD002EBD24 /* CoreFoundation.framework */,
+				43A139F71E6FE79A002EBD24 /* QuartzCore.framework */,
+				43A139F31E6FE75F002EBD24 /* UIKit.framework */,
+				43A139F11E6FE6D8002EBD24 /* Preferences.framework */,
+				43B312CB1E6E98F700EB1A4D /* CydiaSubstrate.framework */,
+				43B302201E6E976F00EB1A4D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43B302221E6E976F00EB1A4D /* AppList2 */ = {
+			isa = PBXGroup;
+			children = (
+				43B302361E6E979700EB1A4D /* ALApplicationList.xm */,
+				43B3022B1E6E976F00EB1A4D /* ALApplicationList.mm */,
+				43B312AF1E6E983800EB1A4D /* ALApplicationList-private.h */,
+				43B312AA1E6E983200EB1A4D /* ALApplicationTableDataSource.m */,
+				43B312AB1E6E983200EB1A4D /* ALValueCell.m */,
+				43B312A71E6E982A00EB1A4D /* SpringBoard.h */,
+				43B3128C1E6E980C00EB1A4D /* public */,
+				43B302231E6E976F00EB1A4D /* Package */,
+				43B302271E6E976F00EB1A4D /* Supporting Files */,
+			);
+			path = AppList2;
+			sourceTree = "<group>";
+		};
+		43B302231E6E976F00EB1A4D /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				43B302241E6E976F00EB1A4D /* DEBIAN */,
+				43B3022D1E6E976F00EB1A4D /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		43B302241E6E976F00EB1A4D /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				43B302261E6E976F00EB1A4D /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		43B302271E6E976F00EB1A4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B302281E6E976F00EB1A4D /* PackageVersion.plist */,
+				43B302291E6E976F00EB1A4D /* AppList2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B3022D1E6E976F00EB1A4D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				43B3022E1E6E976F00EB1A4D /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		43B3022E1E6E976F00EB1A4D /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				43B3022F1E6E976F00EB1A4D /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		43B3022F1E6E976F00EB1A4D /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				43B302301E6E976F00EB1A4D /* AppList2.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		43B3128C1E6E980C00EB1A4D /* public */ = {
+			isa = PBXGroup;
+			children = (
+				43B3128D1E6E980C00EB1A4D /* ALApplicationList.h */,
+				43B3128E1E6E980C00EB1A4D /* ALApplicationTableDataSource.h */,
+				43B3128F1E6E980C00EB1A4D /* ALValueCell.h */,
+				43B312901E6E980C00EB1A4D /* AppList.h */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		43EC24C51E71344300026007 /* AppList2Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				43EC24E31E71349500026007 /* ALApplicationPreferenceViewController.m */,
+				4377C6591E7255B30004754F /* Package */,
+				43EC24CA1E71344300026007 /* Supporting Files */,
+			);
+			path = AppList2Bundle;
+			sourceTree = "<group>";
+		};
+		43EC24CA1E71344300026007 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43EC24CB1E71344300026007 /* PackageVersion.plist */,
+				43EC24CC1E71344300026007 /* AppList2Bundle-Info.plist */,
+				43EC24DF1E71344300026007 /* AppList2Bundle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43B3021A1E6E976F00EB1A4D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B312B01E6E983800EB1A4D /* ALApplicationList-private.h in Headers */,
+				43B312A81E6E982A00EB1A4D /* SpringBoard.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43EC24BE1E71344300026007 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		43B3021C1E6E976F00EB1A4D /* AppList2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B302331E6E976F00EB1A4D /* Build configuration list for PBXNativeTarget "AppList2" */;
+			buildPhases = (
+				43B302171E6E976F00EB1A4D /* ShellScript */,
+				43B302181E6E976F00EB1A4D /* Sources */,
+				43B302191E6E976F00EB1A4D /* Frameworks */,
+				43B3021A1E6E976F00EB1A4D /* Headers */,
+				43B3021B1E6E976F00EB1A4D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppList2;
+			productName = AppList2;
+			productReference = 43B3021D1E6E976F00EB1A4D /* libapplist2.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		43EC24C01E71344300026007 /* AppList2Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43EC24E01E71344300026007 /* Build configuration list for PBXNativeTarget "AppList2Bundle" */;
+			buildPhases = (
+				43EC24BC1E71344300026007 /* Sources */,
+				43EC24BD1E71344300026007 /* Frameworks */,
+				43EC24BE1E71344300026007 /* Headers */,
+				43EC24BF1E71344300026007 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppList2Bundle;
+			productName = AppList2Bundle;
+			productReference = 43EC24C11E71344300026007 /* AppList2.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43B302131E6E976F00EB1A4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					43B3021C1E6E976F00EB1A4D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 49NAE8LY4S;
+						ProvisioningStyle = Automatic;
+					};
+					43EC24C01E71344300026007 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 49NAE8LY4S;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 43B302161E6E976F00EB1A4D /* Build configuration list for PBXProject "AppList2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43B302121E6E976F00EB1A4D;
+			productRefGroup = 43B3021E1E6E976F00EB1A4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43B3021C1E6E976F00EB1A4D /* AppList2 */,
+				43EC24C01E71344300026007 /* AppList2Bundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43B302171E6E976F00EB1A4D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		43B3021B1E6E976F00EB1A4D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		43EC24BF1E71344300026007 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43B302181E6E976F00EB1A4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B312AD1E6E983200EB1A4D /* ALApplicationTableDataSource.m in Sources */,
+				43B3022C1E6E976F00EB1A4D /* ALApplicationList.mm in Sources */,
+				43B312AE1E6E983200EB1A4D /* ALValueCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43EC24BC1E71344300026007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EC24E41E71349500026007 /* ALApplicationPreferenceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		43B302311E6E976F00EB1A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos9.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "armv7s arm64 armv7";
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		43B302321E6E976F00EB1A4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos9.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7s arm64 armv7";
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		43B302341E6E976F00EB1A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 49NAE8LY4S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppList2/AppList2-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"\"$(SRCROOT)/AppList2\"",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = libapplist2;
+				SDKROOT = iphoneos9.2;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		43B302351E6E976F00EB1A4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 49NAE8LY4S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppList2/AppList2-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"\"$(SRCROOT)/AppList2\"",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = libapplist2;
+				SDKROOT = iphoneos9.2;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		43EC24E11E71344300026007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 49NAE8LY4S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppList2Bundle/AppList2Bundle-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"\"$(SRCROOT)/AppList2Bundle\"",
+				);
+				INFOPLIST_FILE = "AppList2Bundle/AppList2Bundle-Info.plist";
+				INSTALL_PATH = /System/Library/PreferenceBundles;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = AppList2;
+				SDKROOT = iphoneos9.2;
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		43EC24E21E71344300026007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 49NAE8LY4S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppList2Bundle/AppList2Bundle-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"\"$(SRCROOT)/AppList2Bundle\"",
+				);
+				INFOPLIST_FILE = "AppList2Bundle/AppList2Bundle-Info.plist";
+				INSTALL_PATH = /System/Library/PreferenceBundles;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = AppList2;
+				SDKROOT = iphoneos9.2;
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B302161E6E976F00EB1A4D /* Build configuration list for PBXProject "AppList2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B302311E6E976F00EB1A4D /* Debug */,
+				43B302321E6E976F00EB1A4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B302331E6E976F00EB1A4D /* Build configuration list for PBXNativeTarget "AppList2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B302341E6E976F00EB1A4D /* Debug */,
+				43B302351E6E976F00EB1A4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43EC24E01E71344300026007 /* Build configuration list for PBXNativeTarget "AppList2Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EC24E11E71344300026007 /* Debug */,
+				43EC24E21E71344300026007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43B302131E6E976F00EB1A4D /* Project object */;
+}

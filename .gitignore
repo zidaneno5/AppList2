@@ -1,0 +1,4 @@
+*.mm
+xcuserdata
+*.xcuserdatad
+xcshareddata

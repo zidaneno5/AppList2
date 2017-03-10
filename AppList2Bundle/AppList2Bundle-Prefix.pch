@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AppList2Bundle' target in the 'AppList2Bundle' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
